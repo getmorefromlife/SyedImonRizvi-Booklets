@@ -1,10 +1,10 @@
 {
   "booklets": [
     {
-      "id": "three-purposes-of-imams",
-      "title": "Three Purposes of the Imams",
+      "id": "3-purposes-imams",
+      "title": "Three Purposes of the Imams (as)",
       "category": "Religious",
-      "description": "A discussion on the three purposes of the Imams in Islamic theology",
+      "description": "Understanding the three fundamental purposes and roles of the divinely appointed Imams",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Three_Purposes_Imams.pdf" }
@@ -12,9 +12,9 @@
     },
     {
       "id": "aya-birr",
-      "title": "Ayat ul-Birr (The Verse of Righteousness)",
+      "title": "Āyat ul-Birr — Analysis of Verse 177 of Surah Al-Baqarah",
       "category": "Religious",
-      "description": "An analytical study of Ayat ul-Birr, the Quranic verse about righteousness",
+      "description": "An in-depth analysis of the comprehensive verse on righteousness (Birr) from Surah Al-Baqarah",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Aya_Birr_English.pdf" },
@@ -22,10 +22,10 @@
       }
     },
     {
-      "id": "adhan",
+      "id": "adhan-reforms",
       "title": "Adhan Reforms",
       "category": "Religious",
-      "description": "An exploration of Adhan (call to prayer) reforms and practices in Islam",
+      "description": "Examining the call to prayer (Adhan) and proposed reforms from an Islamic perspective",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Adhan_Reforms_English.pdf" },
@@ -33,10 +33,10 @@
       }
     },
     {
-      "id": "arafah",
-      "title": "Arafah - Finding Our Way Back",
+      "id": "finding-our-way-back",
+      "title": "Finding Our Way Back — Arafah",
       "category": "Religious",
-      "description": "A spiritual guide for the day of Arafah, helping believers find their way back to faith",
+      "description": "A reflective exploration on the meaning of Arafah and finding our spiritual way back",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Finding_Our_Way_Back.pdf" }
@@ -57,17 +57,17 @@
       "id": "food-ethics",
       "title": "Food Ethics in Islam",
       "category": "Ethical",
-      "description": "Islamic guidelines on food ethics, dietary practices, and the spiritual aspects of eating",
+      "description": "Islamic principles and guidelines regarding food consumption, ethics, and mindfulness",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Food_Ethics_Islam.pdf" }
       }
     },
     {
-      "id": "islam-imam-ali",
-      "title": "Truth of Islam - Qalb-e-Islam",
+      "id": "truth-of-islam",
+      "title": "Truth of Islam & Qalb-e-Islam",
       "category": "Religious",
-      "description": "Exploring the truth of Islam and the heart of Islam through the teachings of Imam Ali (as)",
+      "description": "Exploring the heart of Islam and the truth of faith through the teachings of Imam Ali (as)",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Truth_of_Islam_English.pdf" },
@@ -76,9 +76,9 @@
     },
     {
       "id": "izzah",
-      "title": "Izzah - Honor and Dignity",
-      "category": "Religious",
-      "description": "A booklet on Izzah (honor and dignity) based on the teachings of Imam Ali (as)",
+      "title": "Izzah (Honour & Dignity)",
+      "category": "Ethical",
+      "description": "The Islamic concept of Izzah — true honour, dignity, and self-respect in light of Imam Ali's teachings",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Izzah_English.pdf" },
@@ -89,19 +89,18 @@
       "id": "khadijah",
       "title": "Hazrat Khadija (sa)",
       "category": "Religious",
-      "description": "The life, virtues, and legacy of Hazrat Khadija (sa), the mother of believers and first wife of Prophet Muhammad (saw)",
+      "description": "The life, virtues, and legacy of Hazrat Khadija (sa), mother of believers",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Khadijah_English.pdf" },
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Khadijah_Urdu.pdf" },
-        "de": { "language": "de", "pdfUrl": "pdfs/Khadijah_German.pdf" }
+        "ur": { "language": "ur", "pdfUrl": "pdfs/Khadijah_Urdu.pdf" }
       }
     },
     {
-      "id": "laughing",
-      "title": "The Smile and the Laugh",
-      "category": "Social",
-      "description": "The teachings of Imam Ali (as) on smiling, laughter, and finding joy in life",
+      "id": "smile-and-laugh",
+      "title": "The Smile and the Laugh — With Imam Ali (as)",
+      "category": "Ethical",
+      "description": "Reflections on humour, laughter, and the etiquette of joy from the teachings of Imam Ali (as)",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Smile_Laugh_English.pdf" },
@@ -109,30 +108,20 @@
       }
     },
     {
-      "id": "mantiq",
-      "title": "Mantiq (Islamic Logic)",
-      "category": "Religious",
-      "description": "A comprehensive book on Mantiq (Islamic logic and reasoning)",
-      "author": "Maulana Syed Imon Rizvi",
-      "variants": {
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Mantiq.pdf" }
-      }
-    },
-    {
-      "id": "mantiq-story",
+      "id": "mantiq-story-book",
       "title": "Mantiq Story Book",
-      "category": "Religious",
-      "description": "A story-based approach to learning Mantiq (Islamic logic) for children and beginners",
+      "category": "Ethical",
+      "description": "A story-based approach to learning logic (Mantiq) for young readers",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Mantiq_Story_Book.pdf" }
+        "en": { "language": "en", "pdfUrl": "pdfs/Mantiq_Story_Book.pdf" }
       }
     },
     {
-      "id": "mustahabaat",
-      "title": "Waajibaat and Mustahabaat",
+      "id": "waajibaat-mustahabaat",
+      "title": "Waajibaat & Mustahabaat — Obligations & Recommendations",
       "category": "Religious",
-      "description": "A guide to Wajibaat (obligatory acts) and Mustahabaat (recommended acts) in Islam",
+      "description": "A practical guide to Islamic obligations (Waajibaat) and recommended acts (Mustahabaat)",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Waajibaat_First_English.pdf" },
@@ -140,20 +129,20 @@
       }
     },
     {
-      "id": "permit-book",
-      "title": "Aql kee Kasauti - Permits Issue",
+      "id": "aql-kasauti",
+      "title": "Aql kee Kasauti — The Test of Intellect",
       "category": "Ethical",
-      "description": "Understanding the criteria (touchstone of intellect) for issuing permits in Islamic ethics",
+      "description": "Understanding how intellect (Aql) serves as a criterion for moral and spiritual decisions",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Aql_Kasauti_Permits.pdf" }
+        "en": { "language": "en", "pdfUrl": "pdfs/Aql_Kasauti_Permits.pdf" }
       }
     },
     {
-      "id": "rethink-and-question",
+      "id": "rethink-question",
       "title": "Rethink and Question",
-      "category": "Religious",
-      "description": "Encouraging critical thinking and healthy questioning in matters of faith and religion",
+      "category": "Social",
+      "description": "Encouraging critical thinking and the courage to question assumptions in faith and daily life",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Rethink_Question_English.pdf" },
@@ -164,7 +153,7 @@
       "id": "salawaat-shabaniya",
       "title": "Salawaat-e-Sha'baniya",
       "category": "Religious",
-      "description": "A collection of Salawaat and supplications for the blessed month of Sha'ban",
+      "description": "The special salutations (Salawaat) recommended for the month of Sha'ban, with reflections",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "ur": { "language": "ur", "pdfUrl": "pdfs/Salawaat_Shabaniya_Urdu.pdf" }
@@ -183,9 +172,9 @@
     },
     {
       "id": "domestic-violence",
-      "title": "Domestic Violence - Tashaddud",
+      "title": "Domestic Violence (Tashaddud)",
       "category": "Social",
-      "description": "An Islamic perspective on understanding and preventing domestic violence",
+      "description": "An Islamic perspective on domestic violence, addressing misconceptions and offering guidance",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Domestic_Violence_English.pdf" },
@@ -196,7 +185,7 @@
       "id": "when-logic-speaks",
       "title": "When Logic Speaks",
       "category": "Ethical",
-      "description": "A guide for parents on raising children with logic, wisdom, and rational thinking",
+      "description": "Exploring the role of reason and logic in faith, parenting, and everyday decisions",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/When_Logic_Speaks_English.pdf" },
@@ -211,25 +200,24 @@
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Wisdom_Imam_Hasan_English.pdf" },
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Wisdom_Imam_Hasan_Urdu.pdf" },
-        "de": { "language": "de", "pdfUrl": "pdfs/Imam_Hasan_German.pdf" }
+        "ur": { "language": "ur", "pdfUrl": "pdfs/Wisdom_Imam_Hasan_Urdu.pdf" }
       }
     },
     {
       "id": "zarar-rasaani",
-      "title": "Zarar Rasaani",
-      "category": "Social",
-      "description": "A message regarding causing harm to others, based on the teachings of Mohsin Qiraati",
+      "title": "Zarar Rasaani — On Causing Harm",
+      "category": "Ethical",
+      "description": "Islamic teachings on avoiding harm (Zarar) to others, based on the message of Mohsin Qiraati",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Zarar_Rasaani.pdf" }
+        "en": { "language": "en", "pdfUrl": "pdfs/Zarar_Rasaani.pdf" }
       }
     },
     {
       "id": "ramadhan",
-      "title": "Ramadhan Guide",
+      "title": "Ramadhan — Month of Reflection",
       "category": "Religious",
-      "description": "A comprehensive guide to the holy month of Ramadhan, its practices and spirituality",
+      "description": "Reflections on the spiritual significance of Ramadhan and how to make the most of this blessed month",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Ramadhan_English.pdf" },
@@ -237,30 +225,10 @@
       }
     },
     {
-      "id": "nikaah",
-      "title": "Nikaah Book",
-      "category": "Social",
-      "description": "A comprehensive guide to Nikaah (Islamic marriage) covering rights, responsibilities, and rituals",
-      "author": "Maulana Syed Imon Rizvi",
-      "variants": {
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Nikaah_Book.pdf" }
-      }
-    },
-    {
-      "id": "nikaah-2",
-      "title": "Nikah Book 2",
-      "category": "Social",
-      "description": "Further guidance on Nikah (Islamic marriage) - additional rulings and etiquettes",
-      "author": "Maulana Syed Imon Rizvi",
-      "variants": {
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Nikah_2.pdf" }
-      }
-    },
-    {
       "id": "azadari",
-      "title": "Azadari",
+      "title": "Azadari — Mourning for Imam Hussain (as)",
       "category": "Religious",
-      "description": "Azadari - The practice of mourning for Imam Hussain (as) and the martyrs of Karbala",
+      "description": "Understanding the significance of Azadari (mourning) for Imam Hussain (as) and its spiritual impact",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "ur": { "language": "ur", "pdfUrl": "pdfs/Azadari.pdf" }
@@ -269,8 +237,8 @@
     {
       "id": "balancing-faith",
       "title": "Balancing Faith and Worldly Life",
-      "category": "Religious",
-      "description": "A guide to achieving balance between spiritual faith and worldly responsibilities",
+      "category": "Ethical",
+      "description": "Navigating the balance between spiritual devotion and worldly responsibilities in modern life",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Balancing_Faith_English.pdf" },
@@ -280,20 +248,20 @@
     },
     {
       "id": "aligile",
-      "title": "Aligile - Teachings of Imam Ali",
+      "title": "Aligile — Reflections on Imam Ali (as)",
       "category": "Religious",
-      "description": "A discussion on the teachings and wisdom of Imam Ali (as)",
+      "description": "Reflections and lessons inspired by the life and teachings of Imam Ali ibn Abi Talib (as)",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
-        "en": { "language": "en", "pdfUrl": "pdfs/Aligile.pdf" },
+        "ur": { "language": "ur", "pdfUrl": "pdfs/Aligile.pdf" },
         "ar": { "language": "ar", "pdfUrl": "pdfs/Aligile_Arabic.pdf" }
       }
     },
     {
       "id": "aatishbaazi",
-      "title": "Aatishbaazi - Harms of Fireworks",
+      "title": "Aatishbaazi — The Harms of Fireworks",
       "category": "Social",
-      "description": "An Islamic perspective on the harms and prohibitions of fireworks and firecrackers",
+      "description": "Examining the social, ethical, and physical harms of fireworks (Aatishbaazi) in light of Islamic values",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Fireworks_Harms_English.pdf" },
@@ -301,20 +269,10 @@
       }
     },
     {
-      "id": "farsi-funhouse",
-      "title": "Farsi Funhouse",
-      "category": "Social",
-      "description": "A fun and engaging approach to learning the Farsi (Persian) language",
-      "author": "Maulana Syed Imon Rizvi",
-      "variants": {
-        "fa": { "language": "fa", "pdfUrl": "pdfs/Farsi_Funhouse.pdf" }
-      }
-    },
-    {
       "id": "art-cinema-ethics",
       "title": "Art, Cinema and Ethics",
       "category": "Ethical",
-      "description": "Exploring the intersection of art, cinema, and Islamic ethics in contemporary society",
+      "description": "An Islamic examination of art, cinema, entertainment, and their ethical dimensions",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Art_Cinema_Ethics_English.pdf" },
@@ -322,10 +280,10 @@
       }
     },
     {
-      "id": "aatishbaazi-2",
-      "title": "Aatishbaazi 2 (2025)",
+      "id": "aatishbaazi-2025",
+      "title": "Aatish Baazi Urdu 2025",
       "category": "Social",
-      "description": "Further discussion on the harms of fireworks and firecrackers - 2025 edition",
+      "description": "A renewed examination of the fireworks issue, its harms, and Islamic rulings — updated 2025",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "ur": { "language": "ur", "pdfUrl": "pdfs/Aatish_Baazi_2025_Urdu.pdf" }
@@ -333,51 +291,39 @@
     },
     {
       "id": "haqq-baatil",
-      "title": "Haqq aur Baatil mein Tameez",
+      "title": "Haqq aur Baatil — Truth and Falsehood",
       "category": "Religious",
-      "description": "Distinguishing truth (Haqq) from falsehood (Baatil) - a guide to discernment",
+      "description": "Distinguishing between truth (Haqq) and falsehood (Baatil) in belief and daily life",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "ur": { "language": "ur", "pdfUrl": "pdfs/Haqq_Baatil_Urdu.pdf" }
       }
     },
     {
-      "id": "quran-urdu-translation",
-      "title": "Quran Urdu Translation",
+      "id": "farsi-funhouse",
+      "title": "Farsi Funhouse — Learning Persian Through Play",
+      "category": "Social",
+      "description": "A fun and engaging approach to learning the Persian (Farsi) language",
+      "author": "Maulana Syed Imon Rizvi",
+      "variants": {
+        "en": { "language": "en", "pdfUrl": "pdfs/Farsi_Funhouse.pdf" }
+      }
+    },
+    {
+      "id": "quran-urdu-tarjuma",
+      "title": "Quran Urdu Translation — Cover Edition",
       "category": "Religious",
-      "description": "Urdu translation of the Holy Quran for Urdu-speaking readers",
+      "description": "An Urdu translation of the Holy Quran with introductory cover content",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "ur": { "language": "ur", "pdfUrl": "pdfs/Quran_Urdu_Tarjuma.pdf" }
       }
     },
     {
-      "id": "sifaat-shia",
-      "title": "Sifaat-e-Shia",
-      "category": "Religious",
-      "description": "The characteristics, attributes, and distinguishing features of Shia Muslims",
-      "author": "Maulana Syed Imon Rizvi",
-      "variants": {
-        "en": { "language": "en", "pdfUrl": "pdfs/Sifaat_Shia_English.pdf" },
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Sifaat_Shia_Urdu.pdf" },
-        "fa": { "language": "fa", "pdfUrl": "pdfs/Sifaat_Shia_Persian.pdf" }
-      }
-    },
-    {
-      "id": "imam-zamana",
-      "title": "Imam-e-Zamana ko kaisey khush karain",
-      "category": "Religious",
-      "description": "A children's storybook on how to please Imam-e-Zamana (Imam Mahdi, aj)",
-      "author": "Maulana Syed Imon Rizvi",
-      "variants": {
-        "ur": { "language": "ur", "pdfUrl": "pdfs/Imam_Zamana_Story.pdf" }
-      }
-    },
-    {
       "id": "jamaran-guide",
-      "title": "Mohammad Ali Jamaran - Principal Guide",
-      "category": "Religious",
-      "description": "A principal guide for the Mohammad Ali Jamaran institution",
+      "title": "Principal Guide — Mohammad Ali Jamaran",
+      "category": "Ethical",
+      "description": "A guide on the principles and vision of Mohammad Ali Jamaran's educational approach",
       "author": "Maulana Syed Imon Rizvi",
       "variants": {
         "en": { "language": "en", "pdfUrl": "pdfs/Jamaran_Guide.pdf" }

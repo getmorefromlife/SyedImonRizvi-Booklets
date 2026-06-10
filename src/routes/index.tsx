@@ -11,8 +11,6 @@ import {
   ChevronLeft,
   ChevronRight,
   Languages,
-  ExternalLink,
-  FileText,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -64,76 +62,7 @@ type Booklet = {
   pdfUrl?: string;
 };
 
-const INLINE_BOOKLETS: Booklet[] = [
-  {
-    id: "stillness",
-    title: "On Stillness",
-    category: "Religious",
-    description:
-      "A short meditation on silence as a spiritual practice. Examines how stillness reorders attention and softens the noise of modern life.",
-    author: "Maulana Syed Imon Rizvi",
-    readMinutes: 9,
-    language: "en",
-    languageLabel: "English",
-    sections: [
-      {
-        heading: "I. The Weight of Noise",
-        paragraphs: [
-          "We have grown fluent in noise. From the moment we wake, sound and signal arrive in waves — notifications, headlines, conversations half-heard. The interior life, by contrast, is quiet, and so we have forgotten how to listen to it.",
-          "Every tradition that has endured has, at its center, a practice of pause. Sabbath, prayer, meditation, fast. They differ in form but agree on a single instruction: stop.",
-        ],
-      },
-      {
-        heading: "II. A Different Kind of Attention",
-        paragraphs: [
-          "Stillness is not the absence of activity. It is the presence of attention. A craftsman bent over their work is still. A reader lost in a page is still. The body may move; what is quiet is the restless mind that demands the next thing.",
-          "To practice stillness is to refuse, for a moment, the economy of distraction — and to notice what remains when nothing is being sold to you.",
-        ],
-      },
-      {
-        heading: "III. A Practice for the Week",
-        paragraphs: [
-          "Begin with ten minutes. Sit somewhere uncluttered. Do not reach for a device. Let the first wave of restlessness pass; it always does. What follows is not emptiness but a quieter kind of fullness.",
-          "Do this daily for a week and observe — without judgment — what changes. Most people report not peace, exactly, but a small return of perspective. That, in itself, is the beginning.",
-        ],
-      },
-    ],
-  },
-  {
-    id: "good-neighbor",
-    title: "The Good Neighbor",
-    category: "Social",
-    description:
-      "An essay on small communities and the ethics of proximity. Argues that neighborliness, not ideology, is the foundation of civic life.",
-    author: "Maulana Syed Imon Rizvi",
-    readMinutes: 12,
-    language: "en",
-    languageLabel: "English",
-    sections: [
-      {
-        heading: "I. The Forgotten Unit",
-        paragraphs: [
-          "Politics speaks in millions; love operates in handfuls. Between the abstraction of nation and the intimacy of family lies a forgotten unit — the neighborhood — where the moral life is most quietly tested.",
-          "To be a good neighbor is unglamorous work. It rarely makes news. But it is the substrate on which every other social good is built.",
-        ],
-      },
-      {
-        heading: "II. Proximity as Ethics",
-        paragraphs: [
-          "There is a particular discipline to caring for the person whose door you can see from your window. You cannot perform it. You cannot un-meet them. Their need is specific, and so your help must be specific too.",
-          "Ideologies are easy to hold because they cost nothing. Neighborliness costs time, attention, and occasional inconvenience. That is precisely why it forms character in a way ideology cannot.",
-        ],
-      },
-      {
-        heading: "III. Small Acts, Real Weight",
-        paragraphs: [
-          "Bring in the bin. Learn the name. Knock before assuming. Offer help once without expecting it to be accepted, and again later without resentment. These gestures are small; their cumulative effect is not.",
-          "A society of good neighbors does not need to agree on everything. It needs only to recognize, in the face across the hedge, a person whose well-being is bound up — quietly, inescapably — with its own.",
-        ],
-      },
-    ],
-  },
-];
+const INLINE_BOOKLETS: Booklet[] = [];
 
 const CATEGORIES = ["All", "Religious", "Social", "Ethical"] as const;
 type Category = (typeof CATEGORIES)[number];
@@ -151,6 +80,7 @@ function Index() {
   const [category, setCategory] = useState<Category>("All");
   const [language, setLanguage] = useState<"all" | Language>("all");
   const [active, setActive] = useState<Booklet | null>(null);
+  const [activePdf, setActivePdf] = useState<string | null>(null);
   const [booklets, setBooklets] = useState<Booklet[]>(INLINE_BOOKLETS);
 
   useEffect(() => {
@@ -210,10 +140,6 @@ function Index() {
   }, [booklets]);
 
   const handleOpenBooklet = (booklet: Booklet) => {
-    if (booklet.pdfUrl) {
-      window.open(`/sacred-pages/booklets/${booklet.pdfUrl}`, "_blank");
-      return;
-    }
     if (booklet.sections) {
       setActive(booklet);
     }
@@ -352,18 +278,21 @@ function Index() {
                       {b.languageLabel}
                       {b.readMinutes ? ` · ${b.readMinutes} min read` : ""}
                     </span>
-                    <button
-                      onClick={() => handleOpenBooklet(b)}
-                      className="flex items-center gap-1.5 text-sm border-b border-[#111111] pb-0.5 hover:opacity-60 transition-opacity"
-                    >
-                      {b.pdfUrl ? (
-                        <>
-                          View PDF <ExternalLink size={13} />
-                        </>
-                      ) : (
-                        "Read booklet →"
-                      )}
-                    </button>
+                    {b.pdfUrl ? (
+                      <button
+                        onClick={() => setActivePdf(b.pdfUrl!)}
+                        className="flex items-center gap-1.5 text-sm border-b border-[#111111] pb-0.5 hover:opacity-60 transition-opacity"
+                      >
+                        Read booklet →
+                      </button>
+                    ) : (
+                      <button
+                        onClick={() => handleOpenBooklet(b)}
+                        className="flex items-center gap-1.5 text-sm border-b border-[#111111] pb-0.5 hover:opacity-60 transition-opacity"
+                      >
+                        Read booklet →
+                      </button>
+                    )}
                   </div>
                 </article>
               )),
@@ -386,14 +315,18 @@ function Index() {
           </h2>
           <div className="mt-8 space-y-5 text-[#111111]/75 leading-relaxed text-[15px]">
             <p>
-              Maulana Syed Imon Rizvi is a writer and educator working at the quiet edges of
-              religion, ethics, and community. These booklets began as letters to friends and
-              students; they are published here in the same spirit — personal, unhurried, and meant
-              to be read more than once.
+              Maulana Syed Imon Rizvi is a religious scholar and agile leader — holding an MBA
+              alongside PMP, PSM I/II, and PAL I certifications. His work bridges spiritual depth
+              with disciplined practice. These booklets began as letters to friends and students;
+              they are published here in the same spirit — personal, unhurried, and meant to be
+              read more than once.
             </p>
             <p>
               Nothing on this site tracks you. Nothing asks you to sign up. If a piece is useful,
               share it. If it isn't, close the tab. The library will remain.
+            </p>
+            <p>
+              This site is open source.
             </p>
           </div>
         </section>
@@ -405,6 +338,7 @@ function Index() {
       </main>
 
       {active && <Reader booklet={active} onClose={() => setActive(null)} />}
+      {activePdf && <PdfReader pdfUrl={activePdf} onClose={() => setActivePdf(null)} />}
     </div>
   );
 }
@@ -679,6 +613,90 @@ function IconBtn({
     >
       {children}
     </button>
+  );
+}
+
+function PdfReader({ pdfUrl, onClose }: { pdfUrl: string; onClose: () => void }) {
+  const [zoom, setZoom] = useState(1);
+
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = prev;
+    };
+  }, []);
+
+  useEffect(() => {
+    const fn = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", fn);
+    return () => window.removeEventListener("keydown", fn);
+  }, [onClose]);
+
+  return (
+    <div className="fixed inset-0 z-50 bg-[#F5F5F0] flex flex-col">
+      <div className="sticky top-0 z-10 border-b border-[#E5E5E5] bg-white/90 backdrop-blur-md">
+        <div className="max-w-5xl mx-auto px-4 sm:px-8 h-14 flex items-center justify-between gap-3">
+          <button
+            onClick={onClose}
+            className="flex items-center gap-2 text-sm text-[#111111]/70 hover:text-[#111111] transition-colors"
+            aria-label="Close reader"
+          >
+            <X size={16} />
+            <span className="hidden sm:inline">Close</span>
+          </button>
+
+          <div className="flex items-center gap-2 text-[#111111]/70">
+            <button
+              onClick={() => setZoom((z) => Math.max(0.5, z - 0.25))}
+              className="h-8 px-2 text-xs hover:bg-[#F9F9F9] rounded transition-colors"
+              aria-label="Zoom out"
+            >
+              <Minus size={14} />
+            </button>
+            <span className="text-xs tabular-nums min-w-[3ch] text-center">
+              {Math.round(zoom * 100)}%
+            </span>
+            <button
+              onClick={() => setZoom((z) => Math.min(2, z + 0.25))}
+              className="h-8 px-2 text-xs hover:bg-[#F9F9F9] rounded transition-colors"
+              aria-label="Zoom in"
+            >
+              <Plus size={14} />
+            </button>
+
+            <span className="w-px h-5 bg-[#E5E5E5] mx-1" />
+
+            <a
+              href={`/sacred-pages/booklets/${pdfUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="h-8 px-2.5 inline-flex items-center gap-1.5 text-xs hover:bg-[#F9F9F9] rounded transition-colors"
+              aria-label="Download PDF"
+            >
+              <Download size={14} />
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex-1 overflow-auto bg-[#F5F5F0] flex justify-center p-4 sm:p-8">
+        <div
+          className="origin-top transition-transform duration-200"
+          style={{ transform: `scale(${zoom})` }}
+        >
+          <embed
+            src={`/sacred-pages/booklets/${pdfUrl}`}
+            type="application/pdf"
+            className="shadow-xl bg-white"
+            style={{ width: "800px", height: "1100px" }}
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 
