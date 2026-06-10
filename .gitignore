@@ -31,5 +31,11 @@ dist-ssr
 *.sln
 *.sw?
 
+# CV / Resume
+*CV*
+*cv*
+*Resume*
+*resume*
+
 # Raw booklet source files
 booklets projects/
