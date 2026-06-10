@@ -317,7 +317,7 @@ function Index() {
             <p>
               Maulana Syed Imon Rizvi is a religious scholar and agile leader — holding an MBA
               alongside PMP, PSM I/II, and PAL I certifications. His work bridges spiritual depth
-              with disciplined practice. These booklets began as letters to friends and students;
+              with disciplined practice. These booklets began when Syed was confronted with certain issues, discussions and debates;
               they are published here in the same spirit — personal, unhurried, and meant to be
               read more than once.
             </p>
